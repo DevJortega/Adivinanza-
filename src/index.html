@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Adivinanza</title>
+</head>
+<body class="bg-white  flex justify-center items-center h-screen">
+    <div class="bg-blue-400 space-y-4 flex flex-col justify-center items-center p-20 rounded-lg shadow-lg">
+        <h1 class="text-white font-bold text-5xl">Adivina el número</h1>
+        <label for="numero" class="text-xl text-green-300 font-bold">Elige un número entre 0 y 10</label>
+        <input type="number" id="numero" class="p-2 rounded-lg" placeholder="Escribe un número">
+        <div id="botones"> 
+            <button id="botonComprobar" class="bg-blue-800 text-white p-2 rounded-lg m-2">Comprobar</button>
+            <button id="botonReiniciar" class="bg-blue-800 text-white p-2 rounded-lg m-2">Reiniciar</button>
+        </div>
+        <p id="intentos" class="text-white font-bold text-2xl mt-4">Intentos: 4</p>
+        <p id="mensaje" class="text-yellow-200 font-bold text-2xl mt-4"></p>
+        <p id="perdiste" class="text-yellow-200 font-bold text-2xl mt-4"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html> 
